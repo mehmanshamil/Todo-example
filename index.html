@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="todo-section">
+        <div class="container">
+          <h1>
+            To Do List
+            <i class="fa-regular fa-clipboard"></i>
+          </h1>
+
+          <div class="todo-input">
+            <input id="inp"  type="text" placeholder="Add new task" />
+            <button id="getPost">Add</button>
+          </div>
+
+          <div id="todos">
+
+          </div>
+
+          <div id="modal">
+            <h2>Melumati deyismek ucun metn daxil edin</h2>
+            <i onclick="closeModal()" id="closeModal" class="fa-regular fa-circle-xmark"></i>
+              <form id="form" action="#">
+
+              </form>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

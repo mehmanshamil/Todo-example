@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e7edf3;
+  color: #414141;
+}
+
+main {
+  #modal {
+    display: none;
+    width: 50%;
+    top: 20%;
+    left: 25%;
+    height: 300px;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    h2{
+        text-align: center;
+        color: white;
+        margin-top: 30px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+      input {
+        width: 100%;
+        height: 50px;
+        margin-top: 100px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+      }
+      button {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        margin: 1rem;
+        cursor: pointer;        
+        width: 100px;
+        height: 50px;
+        background-color: green;
+        border: 1px solid green;
+        color: white;
+        transition: all 0.3s ease;
+        &:hover {
+          background-color: white;
+          color: green;
+        }
+      }
+    }
+    #closeModal {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      color: red;
+      font-size: 20px;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .todo-section {
+    padding: 0 15px 30px;
+
+    .container {
+      width: 38%;
+      margin: 0 auto;
+
+      h1 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        padding-bottom: 16px;
+
+        i {
+          color: #e2b84b;
+          font-size: 24px;
+          margin-left: 8px;
+        }
+      }
+
+      .todo-input {
+        display: flex;
+        align-items: center;
+        background-color: #f4f4f4;
+        border-radius: 30px;
+        height: 38px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 5px #00000010;
+        overflow: hidden;
+
+        #inp {
+          flex: 1;
+          width: 0;
+          height: 100%;
+          padding: 0 14px;
+          border: none;
+          outline: none;
+          background: transparent;
+          font-size: 14px;
+          font-style: italic;
+        }
+
+        #getPost {
+          height: 100%;
+          width: 86px;
+          border: none;
+          border-radius: 30px;
+          background-color: #e65f54;
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+
+      #todos {
+        background-color: #f4f4f4;
+        border-radius: 16px;
+        padding: 16px 11px;
+
+        .task-group {
+          margin-bottom: 12px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          h3 {
+            font-size: 14px;
+            color: #e05e54;
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            margin: 0 6px 8px;
+          }
+
+          .task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            height: 34px;
+            padding: 5px 10px;
+            margin-bottom: 8px;
+            background-color: #d6dbde;
+            border-radius: 25px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            p {
+              flex: 1;
+              text-align: center;
+              font-size: 14px;
+              font-weight: 600;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+
+            i:first-child {
+              color: #e47b75;
+              font-size: 17px;
+              cursor: pointer;
+            }
+
+            i:last-child {
+              color: #17191a;
+              font-size: 16px;
+              cursor: pointer;
+            }
+
+            &.completed {
+              background-color: #dfe2e4;
+
+              p {
+                color: #999da0;
+              }
+
+              i:first-child {
+                color: #e6a29c;
+              }
+
+              i:last-child {
+                color: #888d90;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
